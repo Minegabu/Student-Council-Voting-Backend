@@ -6,7 +6,8 @@ const GetCandidate = async (request, response) => {
         const { id } = request.params
         console.log(id)
         const foundUsers = await users.find({ email: id }, { division_id: 1, _id: 0 })
-        const target = await candidates.find({ division_id: 0 })
+        let division_id = foundUsers[0].division_id
+        const target = await candidates.find({ division_id: division_id })
         return response.status(200).json({ success: true, data: target })
     } catch (error) {
         console.log(error)

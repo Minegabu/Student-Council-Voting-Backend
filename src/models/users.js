@@ -6,15 +6,13 @@ const usersSchema = new Schema({
     email: {
         type: String,
 
-        required: true,
-
         unique: true,
 
     },
 
     division_id: { type: Number, default: 0, unique: true, },
 
-    candidate_vote: { type: Number, default: 0 },
+    candidate_vote: { type: String, default: null },
 
 });
 
