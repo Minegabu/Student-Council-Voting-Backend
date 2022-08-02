@@ -1,4 +1,4 @@
-const { Schema, model, models } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const usersSchema = new Schema({
     name: { type: String },
@@ -8,11 +8,13 @@ const usersSchema = new Schema({
 
         unique: true,
 
+        required: true
+
     },
 
-    division_id: { type: Number, default: 0, unique: true, },
+    division_id: { type: Number, default: 0, required: true },
 
-    candidate_vote: { type: String, default: null },
+    candidate_vote: { type: String, default: null, required: true },
 
 });
 

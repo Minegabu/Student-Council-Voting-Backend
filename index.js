@@ -3,6 +3,7 @@ const app = express()
 const UserController = require('./src/UserController')
 const AddUser = require('./src/AddUser')
 const AddVote = require('./src/AddVote')
+const GetAdmin = require('./src/FindAdmin')
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -28,6 +29,9 @@ app.post('/api/users/add/', AddUser.AddUser)
 
 app.post('/api/vote/update/', AddVote.AddVote)
 
+app.post('/api/admin/verify', GetAdmin.GetAdmin)
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+

@@ -3,9 +3,9 @@ const { Schema, model, models } = require("mongoose");
 
 const candidatesSchema = new Schema({
 
-    name: { type: String },
+    name: { type: String, required: true },
 
-    description: { type: String },
+    description: { type: String, required: true },
 
     division_id: { type: Number, default: 0 },
 
