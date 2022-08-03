@@ -1,14 +1,17 @@
 const admin = require('./models/admin')
-
+const jwt = require('jsonwebtoken')
 const GetAdmin = async (req, res) => {
     try {
         const { username, password } = req.body;
-        const users = await admin.find({ username: username, password: password })
+        const users = await admin.findOne({ username: username, password: password })
         if (users) {
-            console.log(users)
-            return res.status(200).json({ success: true, user: true })
+            const token = jwt.sign({
+                name: req.body.username,
+                email: req.body.email
+            }, 'Y3EV2j4ASnU=')
+            return res.status(200).json({ status: true, users: token })
         } else {
-            return res.status(400).json({ success: false, user: false })
+            return res.status(400).json({ status: false, users: false })
         }
     } catch (error) {
         console.log(error)
