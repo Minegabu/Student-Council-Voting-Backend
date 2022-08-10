@@ -1,0 +1,236 @@
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+input:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+body {
+    margin: 0%;
+}
+
+#hi {
+    size: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Header {
+    size: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#SubmitVoteButton {
+    size: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    width: 15vw;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background: #292A30;
+    height: 10vh;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    ;
+    font-size: 3vh;
+    transition-duration: 0.5s;
+    border: 0.5vh solid transparent;
+    color: white
+}
+
+a:hover {
+    border-color: white;
+
+}
+
+#signedinas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    ;
+}
+
+#text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hi2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hi3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hi4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#profileimg {
+    display: flex;
+    align-items: right !important;
+    justify-content: right !important;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 5px;
+}
+
+img {
+    display: flex;
+    border-radius: 50%;
+    align-items: left !important;
+    justify-content: left !important;
+    margin-left: 0vh;
+}
+
+p {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+}
+
+#loginbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+}
+
+#login1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+}
+
+#hi2 {
+    margin: 1vh;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+input::placeholder {
+    color: #cacccf;
+}
