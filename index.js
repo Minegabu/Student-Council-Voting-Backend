@@ -12,18 +12,18 @@ const bodyParser = require("body-parser");
 
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: '*',
     credentials: true,
     optionSuccessStatus: 200,
 }
 app.use(cors(corsOptions))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-const port = 1234;
+const port = 1234; r
 
-(async () => {
-    const db = await mongoose.connect('mongodb://localhost:27017/voting');
-})()
+    (async () => {
+        const db = await mongoose.connect('mongodb://localhost:27017/voting');
+    })()
 
 app.get('/api/get-candidate/:id', UserController.GetCandidate)
 
@@ -37,7 +37,5 @@ app.post('/api/admin/createcandidate', AddCandidates.AddCandidates)
 
 app.get('/api/admin/get-vote', GetVote.GetVote)
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+
 
