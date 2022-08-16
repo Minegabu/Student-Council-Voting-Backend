@@ -19,10 +19,10 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-
-    (async () => {
-        const db = await mongoose.connect(process.env.MONGODB_URI);
-    })()
+port = 1234;
+(async () => {
+    const db = await mongoose.connect(process.env.MONGODB_URI);
+})()
 
 app.get('/api/get-candidate/:id', UserController.GetCandidate)
 
