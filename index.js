@@ -19,11 +19,10 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-const port = 1234;
 
-(async () => {
-    const db = await mongoose.connect(process.env.MONGODB_URI);
-})()
+    (async () => {
+        const db = await mongoose.connect(process.env.MONGODB_URI);
+    })()
 
 app.get('/api/get-candidate/:id', UserController.GetCandidate)
 
@@ -37,7 +36,5 @@ app.post('/api/admin/createcandidate', AddCandidates.AddCandidates)
 
 app.get('/api/admin/get-vote', GetVote.GetVote)
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+
 
