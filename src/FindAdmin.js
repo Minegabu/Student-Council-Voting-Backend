@@ -1,6 +1,7 @@
+// import things
 const admin = require('./models/admin')
 const jwt = require('jsonwebtoken')
-const crypto = require('crypto')
+
 const GetAdmin = async (req, res) => {
     const { username, encryptedpassword } = req.body;
     const users = await admin.findOne({ username: username, password: encryptedpassword })
