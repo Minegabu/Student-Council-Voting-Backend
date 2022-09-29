@@ -6,7 +6,7 @@ const AddVote = async (req, res) => {
         // get vote from the post request
         const { vote, name } = req.body;
         // add the vote to the database
-        const add = await users.updateOne({ name: name }, { sortby:})
+        const add = await users.updateOne({ name: name })
 
         res.json({ add })
     } catch (error) {

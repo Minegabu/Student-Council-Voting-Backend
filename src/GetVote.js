@@ -4,7 +4,7 @@ const users = require('./models/users')
 const GetVote = async (request, response) => {
     try {
         // find all the votes
-        const vote = await users.find({}, { candidate_vote: 1, _id: 0 }, { sortBy: { candidate_vote: 1 } })
+        const vote = await users.find({}, { candidate_vote: 1, _id: 0 }).sort({ candidate_vote: 1 })
         const vote2 = vote.map((vote) => vote.candidate_vote)
         console.log(vote2)
         var counts = {};
