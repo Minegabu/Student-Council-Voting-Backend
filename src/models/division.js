@@ -1,6 +1,7 @@
 const { Schema, model, models } = require("mongoose");
 
 const divisionSchema = new Schema({
+
     name: String,
 
 });
