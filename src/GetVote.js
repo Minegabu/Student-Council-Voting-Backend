@@ -10,7 +10,7 @@ const GetVote = async (request, response) => {
         var counts = {};
         vote2.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
         console.log(counts)
-        return response.status(200).json({ success: true, data: vote })
+        return response.status(200).json({ success: true, data: counts })
     } catch (err) {
         // if it fails to find all the votes
         console.log(err)
