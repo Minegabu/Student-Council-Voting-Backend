@@ -9,7 +9,6 @@ const GetVote = async (request, response) => {
         const vote2 = vote.map((vote) => vote.candidate_vote)
         var counts = {};
         vote2.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
-        result = Object.counts(data).map(([role, values]) => ({ role, ...values }));
         return response.status(200).json({ success: true, data: counts })
     } catch (err) {
         // if it fails to find all the votes
