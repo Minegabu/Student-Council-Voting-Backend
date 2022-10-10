@@ -3,8 +3,7 @@ const users = require('./models/users')
 const AddVote = async (req, res) => {
     try {
         const { vote, name } = req.body;
-        const add = await users.updateOne({ name: name }, { $set: { "candidate_vote": vote } })
-        console.log(add)
+        const add = await users.updateOne({ email: email }, { $set: { "candidate_vote": vote } })
         res.json({ add })
     } catch (error) {
         console.log(error)
