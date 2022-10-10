@@ -14,7 +14,7 @@ const usersSchema = new Schema({
 
     division_id: { type: Number, default: 0, required: true },
 
-    candidate_vote: { type: String, default: null, required: true },
+    candidate_vote: { type: String, default: null },
 
 });
 
